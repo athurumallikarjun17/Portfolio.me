@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - Mallikarjun Athuru</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="port.webp" type="image/x-icon">
+</head>
+<body>
+  <header class="portfolio-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+               <a class="navbar-brand" href="index.html"><h2>Mallikarjun Athuru</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="internships.html">Internships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certifications.html">Certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-sm ms-2" href="Mallikarjun_Athuru_Junior_Java_Developer.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+    </header>
+
+  <div data-include="header.html"></div>
+  <main class="container mt-4">
+    <section id="projects" class="p-4 bg-white rounded-3 shadow-sm">
+      <h3>Projects</h3>
+      <div class="project-card">
+        <h5 class="card-title">AI BASED LOAN APPROVAL PREDICTION SYSTEM FOR FINANCIAL INSTITUTIONS</h5>
+        <p class="card-text">Developed a machine learning–powered system to assist financial institutions in automating loan approval decisions. The solution analyzes applicant data such as income, credit score, employment history, and debt-to-income ratio to predict loan eligibility with high accuracy.</p>
+
+        <div id="proj1-collapse" class="collapse" aria-expanded="false">
+          <p><strong>Stack</strong></p>
+          <ul>
+            <li>Languages/Frameworks: Python, Java, Spring Boot (for backend integration)</li>
+            <li>Libraries/Tools: Scikit-learn, Pandas, NumPy, Matplotlib/Seaborn</li>
+            <li>Database: SQL/Oracle for storing applicant and historical loan data</li>
+            <li>Deployment: Docker, AWS/Azure for scalability</li>
+          </ul>
+
+          <p><strong>Key Features</strong></p>
+          <ul>
+            <li>Data Preprocessing: Cleaning, normalization, and feature engineering for financial datasets.</li>
+            <li>Model Training: Implemented classification algorithms (Logistic Regression, Random Forest, XGBoost) to predict loan approval outcomes.</li>
+            <li>Risk Assessment: Generates probability scores for applicant default risk.</li>
+            <li>Dashboard: Interactive visualization of approval trends and risk categories using Tableau/ReactJS frontend.</li>
+            <li>Integration: REST APIs for seamless connection with banking systems.</li>
+          </ul>
+        </div>
+
+        <div class="mt-3 d-flex align-items-center gap-2">
+          <button class="btn btn-sm btn-outline-primary read-more-btn" data-bs-toggle="collapse" data-bs-target="#proj1-collapse" aria-expanded="false" aria-controls="proj1-collapse">Read more</button>
+          <a class="btn btn-sm btn-primary" href="#" target="_blank">View Repo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-include="footer.html"></div>
+  <script src="include.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Shared site styles */
+:root{
+  --brand:#0d6efd; /* Bootstrap primary */
+  --muted:#6c757d;
+  --card-bg:#ffffff;
+  --surface:#f8f9fa;
+  --radius:10px;
+}
+
+html,body{height:100%;}
+body{
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--surface);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Header tweaks */
+.portfolio-1 .nav-link{color:rgba(0,0,0,.65); transition:color .2s ease-in-out;}
+.portfolio-1 .nav-link:hover{color:var(--brand);}
+.portfolio-1 .nav-link.active{color:var(--brand); font-weight:600; border-bottom:2px solid rgba(13,110,253,.12);}
+.portfolio-1 .d-flex{gap:0.75rem;}
+
+/* Profile badge */
+.profile-badge{display:inline-block;padding:8px;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,.12);}
+.profile-img{width:140px;height:140px;object-fit:cover;border-radius:50%;border:4px solid #ffffffb6;}
+
+/* Cards and sections */
+.card, .p-4{border-radius:var(--radius);}
+.cert-card .card-body{min-height:160px}
+
+/* Skill badges */
+.skill-badge{margin-right:6px;margin-bottom:6px}
+
+/* Buttons */
+.btn-primary{background:var(--brand); border-color:var(--brand)}
+.btn-outline-primary{border-color:rgba(13,110,253,.18)}
+
+/* Small utilities */
+.mb-2 ul{margin-top:.25rem}
+
+/* Responsive tweaks */
+@media (max-width: 576px){
+  .portfolio-home{padding:2rem}
+  .profile-img{width:110px;height:110px}
+}
+
+/* Small elevation */
+.shadow-sm{box-shadow:0 6px 18px rgba(2,6,23,.06) !important}
+
+/* Footer */
+footer{padding-top:1.25rem;padding-bottom:1.25rem}
+
+/* Print cleanup */
+@media print{
+  nav, .no-print, .btn{display:none !important}
+}
